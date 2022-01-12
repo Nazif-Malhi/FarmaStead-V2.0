@@ -1,0 +1,790 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E90BE192-F2B0-4609-BC45-B98A3C9017B7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FarmaStead_V2._0_</RootNamespace>
+    <AssemblyName>FarmaStead%28V2.0%29</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\Connection.cs" />
+    <Compile Include="Commands\RelayCommand.cs" />
+    <Compile Include="Commands\Restriction.cs" />
+    <Compile Include="Log_In.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log_In.Designer.cs">
+      <DependentUpon>Log_In.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Agricultural_Analytics.cs" />
+    <Compile Include="Model\Employee.cs" />
+    <Compile Include="Model\EmployeeService.cs" />
+    <Compile Include="Model\Retreival.cs" />
+    <Compile Include="Model\Stock.cs" />
+    <Compile Include="Model\StockServices.cs" />
+    <Compile Include="ViewModels\EmployeeViewModel.cs" />
+    <Compile Include="ViewModels\StockViewModel.cs" />
+    <Compile Include="Views\DataForms\EmployeeDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DataForms\EmployeeDataForm.Designer.cs">
+      <DependentUpon>EmployeeDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Settings\Settings_ServerIntegration_Extension_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Settings\Settings_ServerIntegration_Extension_UserControl.Designer.cs">
+      <DependentUpon>Settings_ServerIntegration_Extension_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Settings\Settings_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Settings\Settings_UserControl.Designer.cs">
+      <DependentUpon>Settings_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SlidingCards\SlidingCard_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SlidingCards\SlidingCard_UserControl.Designer.cs">
+      <DependentUpon>SlidingCard_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SmallCards\EarningByItems_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SmallCards\EarningByItems_UserControl.Designer.cs">
+      <DependentUpon>EarningByItems_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SmallCards\EarningThisMonth_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SmallCards\EarningThisMonth_UserControl.Designer.cs">
+      <DependentUpon>EarningThisMonth_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SmallCards\Earning_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SmallCards\Earning_UserControl.Designer.cs">
+      <DependentUpon>Earning_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SubMenue\Analyticls_Menue_ControlUserForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SubMenue\Analyticls_Menue_ControlUserForm.Designer.cs">
+      <DependentUpon>Analyticls_Menue_ControlUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SubMenue\Services_Menue_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SubMenue\Services_Menue_UserControl.Designer.cs">
+      <DependentUpon>Services_Menue_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SubMenue\StockManagment_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SubMenue\StockManagment_UserControl.Designer.cs">
+      <DependentUpon>StockManagment_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SubMenue\Wallet_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SubMenue\Wallet_UserControl.Designer.cs">
+      <DependentUpon>Wallet_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\ViewControllers\BaseDataGridView_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ViewControllers\BaseDataGridView_UserControl.Designer.cs">
+      <DependentUpon>BaseDataGridView_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ViewControllers\Stock_Fertilizer_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ViewControllers\Stock_Fertilizer_UserControl.Designer.cs">
+      <DependentUpon>Stock_Fertilizer_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ViewControllers\Stock_Seeds_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ViewControllers\Stock_Seeds_UserControl.Designer.cs">
+      <DependentUpon>Stock_Seeds_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ViewControllers\Stock_WareHouse_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ViewControllers\Stock_WareHouse_UserControl.Designer.cs">
+      <DependentUpon>Stock_WareHouse_UserControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Log_In.resx">
+      <DependentUpon>Log_In.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DataForms\EmployeeDataForm.resx">
+      <DependentUpon>EmployeeDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Settings\Settings_ServerIntegration_Extension_UserControl.resx">
+      <DependentUpon>Settings_ServerIntegration_Extension_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Settings\Settings_UserControl.resx">
+      <DependentUpon>Settings_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SlidingCards\SlidingCard_UserControl.resx">
+      <DependentUpon>SlidingCard_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SmallCards\EarningByItems_UserControl.resx">
+      <DependentUpon>EarningByItems_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SmallCards\EarningThisMonth_UserControl.resx">
+      <DependentUpon>EarningThisMonth_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SmallCards\Earning_UserControl.resx">
+      <DependentUpon>Earning_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SubMenue\Analyticls_Menue_ControlUserForm.resx">
+      <DependentUpon>Analyticls_Menue_ControlUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SubMenue\Services_Menue_UserControl.resx">
+      <DependentUpon>Services_Menue_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SubMenue\StockManagment_UserControl.resx">
+      <DependentUpon>StockManagment_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SubMenue\Wallet_UserControl.resx">
+      <DependentUpon>Wallet_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ViewControllers\BaseDataGridView_UserControl.resx">
+      <DependentUpon>BaseDataGridView_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="ResourcesImages\SplashScreen\splashScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Background\MainBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Background\MainBackground_Agriculture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Background\MainBackground_service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Background\MainBackground_StockManagment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Background\MainBackground_Testing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Background\MainBackground_Wallet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Background\SelectedUnderProcess.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Small-Components\Selected_AgricultureAnalytics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Small-Components\Selected_Services.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Small-Components\Selected_StockManagment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Small-Components\Selected_Testing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Small-Components\Selected_Wallet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\unSelectedHover\AnalyticsUnSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\unSelectedHover\AnalyticsSelected_HoverCrop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\unSelectedHover\AnalyticsSelected_HoverFertilizers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\unSelectedHover\AnalyticsSelected_HoverPesticides.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\unSelectedHover\AnalyticsSelected_HoverSeeds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\unSelectedHover\AnalyticsSelected_HoverSprays.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\unSelectedHover\AnalyticsSelected_HoverWeatherAffect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\Selected\AnalyticsSelected_Crop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\Selected\AnalyticsSelected_Fertilizers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\Selected\AnalyticsSelected_Pesticides.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\Selected\AnalyticsSelected_Seeds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\Selected\AnalyticsSelected_Sprays.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\Selected\AnalyticsSelected_WeatherAffect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\ACF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\ACP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\ACS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\ACSEED.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\ACW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\AFC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\AFP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\AFS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\AFSEED.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\AFW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\APC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\APF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\APS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\APSEED.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\APW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\ASC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\ASEEDC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\ASEEDF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\ASEEDP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\ASEEDS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\ASEEDW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\ASF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\ASP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\ASSEED.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\ASW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\AWC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\AWF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\AWP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\AWS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Analytics\selectedHover\AWSEED.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Services\unSelectedHover\Services.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Services\unSelectedHover\Services_HoverGovt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Services\unSelectedHover\Services_HoverLoan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Services\unSelectedHover\Services_HoverMachinery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Services\unSelectedHover\Services_HoverStock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Services\selectedHover\SGL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Services\selectedHover\SGM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Services\selectedHover\SGS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Services\selectedHover\SLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Services\selectedHover\SLM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Services\selectedHover\SLS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Services\selectedHover\SMG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Services\selectedHover\SML.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Services\selectedHover\SMS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Services\selectedHover\SSG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Services\selectedHover\SSL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Services\selectedHover\SSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Services\Selected\Services_SelectedGovt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Services\Selected\Services_SelectedLoan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Services\Selected\Services_SelectedMachinery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Services\Selected\Services_SelectedStock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\Selected\StockManagment _SelectedWareHouses.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\Selected\StockManagment_SelectedCropStock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\Selected\StockManagment_SelectedFerilizers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\Selected\StockManagment_SelectedMachinery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\Selected\StockManagment_SelectedMoneyAssets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\Selected\StockManagment_SelectedPesticides.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\Selected\StockManagment_SelectedSeeds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SCF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SCM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SCMA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SCP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SCS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SCW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SFC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SFM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SFMA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SFP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SFS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SFW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SMAC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SMAF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SMAM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SMAP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SMAS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SMAW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SMC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SMF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SMMA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SMP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SMS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SMW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SPC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SPF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SPM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SPMA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SPS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SPW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SSC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SSF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SSMA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SSP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SSW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SWC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SWF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SWM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SWMA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SWP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\SWS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\unSelectedHover\StockManagment _HoverWareHouses.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\unSelectedHover\StockManagment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\unSelectedHover\StockManagment_HoverCropStock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\unSelectedHover\StockManagment_HoverFerilizers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\unSelectedHover\StockManagment_HoverMachinery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\unSelectedHover\StockManagment_HoverMoneyAssets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\unSelectedHover\StockManagment_HoverPesticides.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\unSelectedHover\StockManagment_HoverSeeds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\StockSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\StockManagment\selectedHover\StockMS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Wallet\Selected\Wallet _SelectedBalance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Wallet\Selected\Wallet _SelectedBills.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Wallet\Selected\Wallet _SelectedLoan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Wallet\Selected\Wallet _SelectedMaintananceCost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Wallet\selectedHover\WBAB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Wallet\selectedHover\WBAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Wallet\selectedHover\WBAM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Wallet\selectedHover\WBBA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Wallet\selectedHover\WBL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Wallet\selectedHover\WBM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Wallet\selectedHover\WLB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Wallet\selectedHover\WLBA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Wallet\selectedHover\WLM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Wallet\selectedHover\WMB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Wallet\selectedHover\WMBA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Wallet\selectedHover\WML.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Wallet\unSelectedHover\Wallet _HoverBalance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Wallet\unSelectedHover\Wallet _HoverBills.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Wallet\unSelectedHover\Wallet _HoverLoan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Wallet\unSelectedHover\Wallet _HoverMaintainceCost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Menue\Wallet\unSelectedHover\Wallet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Cards\lg-Cards\PlayCardAgri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Cards\lg-Cards\PlayCardServices.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Cards\lg-Cards\PlayCardStock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Cards\lg-Cards\PlayCardTesting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Cards\lg-Cards\PlayCardWallet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Cards\sm-Cards\Earning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Cards\sm-Cards\EarningByItems.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Cards\sm-Cards\EarningThisMonth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Cards\sm-Cards\sm-Buttons\EarningAnalyticsButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Cards\sm-Cards\sm-Buttons\EarningAnalyticsButtonHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Cards\sm-Cards\sm-Buttons\EarningbyItemsButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Cards\sm-Cards\sm-Buttons\EarningbyItemsButtonHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Cards\sm-Cards\sm-Buttons\StatementButtons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Cards\sm-Cards\sm-Buttons\StatementButtonsHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Buttons\LogInButtons\CancelBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Buttons\LogInButtons\CancelBtnHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Buttons\LogInButtons\LogInBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Buttons\LogInButtons\LogInBtnHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Buttons\CRUD_Buttons\AddBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Buttons\CRUD_Buttons\AddBtnHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Buttons\CRUD_Buttons\DeleteBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Buttons\CRUD_Buttons\DeleteBtnHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Buttons\CRUD_Buttons\UpdateBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Buttons\CRUD_Buttons\UpdateBtnHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Buttons\Extra\CancelBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Buttons\Extra\OKBtn.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,667 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ACF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\ACF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ACP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\ACP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ACS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\ACS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ACSEED" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\ACSEED.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ACW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\ACW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Buttons\CRUD_Buttons\AddBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddBtnHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Buttons\CRUD_Buttons\AddBtnHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AFC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\AFC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AFP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\AFP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AFS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\AFS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AFSEED" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\AFSEED.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AFW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\AFW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnalyticsSelected_Crop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\Selected\AnalyticsSelected_Crop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnalyticsSelected_Fertilizers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\Selected\AnalyticsSelected_Fertilizers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnalyticsSelected_HoverCrop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\unSelectedHover\AnalyticsSelected_HoverCrop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnalyticsSelected_HoverFertilizers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\unSelectedHover\AnalyticsSelected_HoverFertilizers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnalyticsSelected_HoverPesticides" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\unSelectedHover\AnalyticsSelected_HoverPesticides.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnalyticsSelected_HoverSeeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\unSelectedHover\AnalyticsSelected_HoverSeeds.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnalyticsSelected_HoverSprays" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\unSelectedHover\AnalyticsSelected_HoverSprays.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnalyticsSelected_HoverWeatherAffect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\unSelectedHover\AnalyticsSelected_HoverWeatherAffect.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnalyticsSelected_Pesticides" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\Selected\AnalyticsSelected_Pesticides.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnalyticsSelected_Seeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\Selected\AnalyticsSelected_Seeds.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnalyticsSelected_Sprays" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\Selected\AnalyticsSelected_Sprays.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnalyticsSelected_WeatherAffect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\Selected\AnalyticsSelected_WeatherAffect.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnalyticsUnSelected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\unSelectedHover\AnalyticsUnSelected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnalyticsUnSelected1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\unSelectedHover\AnalyticsUnSelected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="APC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\APC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="APF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\APF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="APS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\APS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="APSEED" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\APSEED.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="APW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\APW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ASC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\ASC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ASEEDC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\ASEEDC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ASEEDF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\ASEEDF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ASEEDP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\ASEEDP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ASEEDS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\ASEEDS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ASEEDW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\ASEEDW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ASF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\ASF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ASP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\ASP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ASSEED" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\ASSEED.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ASW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\ASW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AWC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\AWC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AWF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\AWF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AWP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\AWP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AWS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\AWS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AWSEED" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Analytics\selectedHover\AWSEED.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CancelBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Buttons\LogInButtons\CancelBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CancelBtn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Buttons\Extra\CancelBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CancelBtnHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Buttons\LogInButtons\CancelBtnHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeleteBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Buttons\CRUD_Buttons\DeleteBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeleteBtnHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Buttons\CRUD_Buttons\DeleteBtnHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Earning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Cards\sm-Cards\Earning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EarningAnalyticsButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Cards\sm-Cards\sm-Buttons\EarningAnalyticsButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EarningAnalyticsButtonHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Cards\sm-Cards\sm-Buttons\EarningAnalyticsButtonHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EarningByItems" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Cards\sm-Cards\EarningByItems.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EarningbyItemsButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Cards\sm-Cards\sm-Buttons\EarningbyItemsButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EarningbyItemsButtonHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Cards\sm-Cards\sm-Buttons\EarningbyItemsButtonHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EarningThisMonth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Cards\sm-Cards\EarningThisMonth.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogInBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Buttons\LogInButtons\LogInBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogInBtnHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Buttons\LogInButtons\LogInBtnHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Background\MainBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainBackground_Agriculture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Background\MainBackground_Agriculture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainBackground_service" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Background\MainBackground_service.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainBackground_StockManagment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Background\MainBackground_StockManagment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainBackground_Testing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Background\MainBackground_Testing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainBackground_Wallet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Background\MainBackground_Wallet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OKBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Buttons\Extra\OKBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlayCardAgri" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Cards\lg-Cards\PlayCardAgri.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlayCardServices" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Cards\lg-Cards\PlayCardServices.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlayCardStock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Cards\lg-Cards\PlayCardStock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlayCardTesting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Cards\lg-Cards\PlayCardTesting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlayCardWallet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Cards\lg-Cards\PlayCardWallet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SCF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SCF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SCM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SCM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SCMA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SCMA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SCP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SCP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SCS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SCS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SCW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SCW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SelectedUnderProcess" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Background\SelectedUnderProcess.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Selected_AgricultureAnalytics" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Small-Components\Selected_AgricultureAnalytics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Selected_Services" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Small-Components\Selected_Services.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Selected_StockManagment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Small-Components\Selected_StockManagment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Selected_Testing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Small-Components\Selected_Testing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Selected_Wallet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Small-Components\Selected_Wallet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Services" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Services\unSelectedHover\Services.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Services_HoverGovt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Services\unSelectedHover\Services_HoverGovt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Services_HoverLoan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Services\unSelectedHover\Services_HoverLoan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Services_HoverMachinery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Services\unSelectedHover\Services_HoverMachinery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Services_HoverStock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Services\unSelectedHover\Services_HoverStock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Services_SelectedGovt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Services\Selected\Services_SelectedGovt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Services_SelectedLoan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Services\Selected\Services_SelectedLoan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Services_SelectedMachinery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Services\Selected\Services_SelectedMachinery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Services_SelectedStock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Services\Selected\Services_SelectedStock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SFC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SFC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SFM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SFM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SFMA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SFMA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SFP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SFP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SFS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SFS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SFW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SFW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SGL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Services\selectedHover\SGL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SGM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Services\selectedHover\SGM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SGS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Services\selectedHover\SGS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SLG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Services\selectedHover\SLG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SLM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Services\selectedHover\SLM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SLS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Services\selectedHover\SLS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SMAC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SMAC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SMAF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SMAF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SMAM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SMAM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SMAP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SMAP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SMAS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SMAS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SMAW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SMAW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SMC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SMC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SMF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SMF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SMG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Services\selectedHover\SMG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SML" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Services\selectedHover\SML.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SMMA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SMMA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SMP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SMP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Services\selectedHover\SMS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SMW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SMW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SPC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SPC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SPF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SPF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="splashScreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\SplashScreen\splashScreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SPM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SPM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SPMA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SPMA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SPS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SPS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SPW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SPW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SSC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SSC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SSF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SSF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SSG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Services\selectedHover\SSG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SSL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Services\selectedHover\SSL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SSM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Services\selectedHover\SSM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SSMA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SSMA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SSP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SSP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SSW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SSW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StatementButtons" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Cards\sm-Cards\sm-Buttons\StatementButtons.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StatementButtonsHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Cards\sm-Cards\sm-Buttons\StatementButtonsHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StockManagment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\unSelectedHover\StockManagment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StockManagment_HoverCropStock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\unSelectedHover\StockManagment_HoverCropStock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StockManagment_HoverFerilizers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\unSelectedHover\StockManagment_HoverFerilizers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StockManagment_HoverMachinery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\unSelectedHover\StockManagment_HoverMachinery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StockManagment_HoverMoneyAssets" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\unSelectedHover\StockManagment_HoverMoneyAssets.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StockManagment_HoverPesticides" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\unSelectedHover\StockManagment_HoverPesticides.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StockManagment_HoverSeeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\unSelectedHover\StockManagment_HoverSeeds.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StockManagment_SelectedCropStock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\Selected\StockManagment_SelectedCropStock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StockManagment_SelectedFerilizers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\Selected\StockManagment_SelectedFerilizers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StockManagment_SelectedMachinery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\Selected\StockManagment_SelectedMachinery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StockManagment_SelectedMoneyAssets" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\Selected\StockManagment_SelectedMoneyAssets.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StockManagment_SelectedPesticides" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\Selected\StockManagment_SelectedPesticides.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StockManagment_SelectedSeeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\Selected\StockManagment_SelectedSeeds.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StockManagment__HoverWareHouses" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\unSelectedHover\StockManagment _HoverWareHouses.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StockManagment__SelectedWareHouses" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\Selected\StockManagment _SelectedWareHouses.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StockMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\StockMS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StockSM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\StockSM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SWC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SWC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SWF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SWF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SWM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SWM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SWMA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SWMA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SWP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SWP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SWS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\StockManagment\selectedHover\SWS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdateBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Buttons\CRUD_Buttons\UpdateBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdateBtnHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Buttons\CRUD_Buttons\UpdateBtnHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wallet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Wallet\unSelectedHover\Wallet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wallet__HoverBalance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Wallet\unSelectedHover\Wallet _HoverBalance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wallet__HoverBills" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Wallet\unSelectedHover\Wallet _HoverBills.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wallet__HoverLoan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Wallet\unSelectedHover\Wallet _HoverLoan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wallet__HoverMaintainceCost" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Wallet\unSelectedHover\Wallet _HoverMaintainceCost.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wallet__SelectedBalance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Wallet\Selected\Wallet _SelectedBalance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wallet__SelectedBills" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Wallet\Selected\Wallet _SelectedBills.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wallet__SelectedLoan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Wallet\Selected\Wallet _SelectedLoan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wallet__SelectedMaintananceCost" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Wallet\Selected\Wallet _SelectedMaintananceCost.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WBAB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Wallet\selectedHover\WBAB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WBAL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Wallet\selectedHover\WBAL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WBAM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Wallet\selectedHover\WBAM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WBBA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Wallet\selectedHover\WBBA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WBL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Wallet\selectedHover\WBL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WBM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Wallet\selectedHover\WBM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WLB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Wallet\selectedHover\WLB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WLBA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Wallet\selectedHover\WLBA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WLM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Wallet\selectedHover\WLM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WMB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Wallet\selectedHover\WMB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WMBA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Wallet\selectedHover\WMBA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WML" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ResourcesImages\Menue\Wallet\selectedHover\WML.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
